@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col s4" *ngFor="let user of users">
+    <div class="card">
+      <div class="card-content">
+
+        <div *ngIf="showData">
+          <span class="card-title activator grey-text text-darken-4"></span>
+          <p><b> Name: </b>{{user.name}}</p>
+          <p><b> Email: </b>{{user.email}}</p>
+          <br>
+        </div>
+
+        <div *ngIf="user._id == idUser">
+          <div class="row">
+            <div class="input-field col s12">
+              <strong>Name</strong>
+              <input id="password" type="text" class="validate" [(ngModel)]="user.name" name="name">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <strong> Email </strong>
+              <input id="email" type="text" class="validate" [(ngModel)]="user.email" name="user">
+            </div>
+          </div>
+        </div>
+        <div class="card-action">
+
+          <div *ngIf="getThisClick(user._id, idUser)">
+            <div class="row">
+              <div class="col s2 offset-s1">
+                <a routerLink="/user-list" (click)="editUser(user._id)">Edit</a>
+              </div>
+              <div class="col s2 offset-s2">
+                <a routerLink="/user-list" (click)="deleteUser(user._id)"> Delete</a>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="getThisClick2(user._id, idUser)">
+            <div class="row">
+              <div class="col s2 offset-s1">
+                <a routerLink="/user-list" (click)="saveUser(user)">Save</a>
+              </div>
+              <div class="col s2 offset-s2">
+                <a routerLink="/user-list" (click)="cancel()"> Cancel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

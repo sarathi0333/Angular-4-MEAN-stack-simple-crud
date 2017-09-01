@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col s12">
+        <div class="valign-wrapper">
+            <div class="center-block">
+                <a *ngIf="displayHome" routerLink="/home" class="waves-effect blue waves-light btn">Home</a>
+                <a *ngIf="displayInfo" routerLink="/info" class="waves-effect blue waves-light btn">Info</a>
+                <a *ngIf="displayAddNewUser" routerLink="/form" class="waves-effect blue waves-light btn">Add new user</a>
+                <a routerLink="/user-list" class="waves-effect blue waves-light btn">Users List</a>
+                <a *ngIf="displayLogin" routerLink="/login-user" class="waves-effect blue waves-light btn">Login</a>
+                <a *ngIf="displayLogout" (click)="logoutUser()" routerLink="/login-user" class="waves-effect blue waves-light btn">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
