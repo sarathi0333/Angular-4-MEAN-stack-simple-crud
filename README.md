@@ -1,2 +1,19 @@
 # Angular-4-MEAN-stack-simple-crud
 Simple Angular 4 MEAN stack crud.
+
+<h4> Personal note </h4>
+<p>This is a pretty basic crud using the MEAN stack with Angular 4.0.0. I've been actively teaching myself for not so long ago. It's quite simple
+  so I hope it can eventually help anyone who's in the learning phase as well.</p>
+<h4> Prerequisites </h4>
+<p>- First of all you will need <b>angular-cli</b> which requires both <b>Node 6.9.0</b> or higher and <b>NPM 3</b> or higher. </p>
+<p>- Install MongoDB and create these two folders <b>C:\data\db</b></p>
+<p>- It will also be required: ExpressJS, body-parser, EJS, MongoJS, Express-History-API-Fallback and Materialize CSS. They
+  can all be easily installed by running the <b>npm install</b> command.</p>
+<h4> Building </h4>
+<p>- <b>ng build</b> in order to create the dist folder.</p>
+<h4> Developing </h4>
+<p>- Run these guys in order to initialize MongoDB
+<p>"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"<p> "C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe"</p>
+<p>-<b> node server </b> and run on <a href="http://localhost:3000">http://localhost:3000</a></p>
+<h4> More </h4>
+<p>I followed <a href="https://www.youtube.com/watch?v=PFP0oXNNveg">this</a> tutorial which was greatly helpful and I would strongly suggest you to take a look.</p>
