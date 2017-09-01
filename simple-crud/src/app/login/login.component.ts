@@ -3,16 +3,13 @@ import { UserService } from "../user.service";
 import { User } from "../../User";
 import { Router } from '@angular/router';
 
-
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
+ 
   user: User[];
   name: string;
   email: string;
@@ -36,6 +33,5 @@ export class LoginComponent {
       }
     });
   }
-  
 }
 
