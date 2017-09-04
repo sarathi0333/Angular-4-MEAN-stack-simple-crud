@@ -56,7 +56,7 @@ router.put('/user/:id', function (req, res, next) {
             "Error": "Bad data, dude"
         })
     } else {
-        db.users.update({ _id: mongojs.ObjectId(req.params.id) }, update, {}, function (err, task) {
+        db.users.update({ _id: mongojs.ObjectId(req.params.id) }, update, {}, function (err, user) {
             if (err) {
                 res.send(err);
             }
