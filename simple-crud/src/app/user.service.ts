@@ -24,7 +24,7 @@ export class UserService {
 
   deleteUser(id) {
     return this.http.delete('/api/user/' + id)
-      .map(res => res.json);
+      .map(res => res.json());
   }
 
   updateUser(user) {
